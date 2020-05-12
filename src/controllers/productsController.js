@@ -47,7 +47,8 @@ const controller = {
 			discount: req.body.discount,
 			category: req.body.category,
 			description: req.body.description,
-			image: 'defaul-image.png' // pongo string porque no viene del formulario
+			image: "default-image.png" 
+			// pongo string porque no viene del formulario
 			// ...req.body reemplaza a todo el choclo, pero es menos legible
 		}
 		// no uso PUSH para poner mi nuevo producto en el array products porque devuelve algo

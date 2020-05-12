@@ -11,7 +11,8 @@ const controller = {
 		res.render('index', {products})
 	},
 	search: (req, res) => {
-		// Do the magic
+		let finalPrice = (product.price) * (1-(product.discount/100))
+		res.render('results', {products, finalPrice})
 	},
 };
 
